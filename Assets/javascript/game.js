@@ -8,6 +8,7 @@ var quotes = ["Chicken parmesean isn't vagan?", "Aw, man, I shot Marvin in the f
 var movies = ["Pulp Fiction", "Coco", "Titanic", "Avengers", "Resivour Dogs", "Inglorious Bastards", "Shrek", "Mulan", "Moana", "Split", "Scott Pilgrim vs The World", "The Room", "Deadpool", "Spiderman", "Batman: Dark Knight", "The Thing", "La La Land", "Spirited Away", "Logan", "Howels moving castle", "Spiderman: Into the Spiderverse", "Black Panther", "Aladdin", "Hercules"];
 var songs = ["I am", "Coming Down", "Forgot about Dre", "The Art of Peer Pressure", "Collard Greens", "Norf Norf", "Really Doe", "Bonfire", "Meditate", "Spice Girl", "Bounce", "Cash Machine", "Dead to Me", "Vile Mentality", "Who Dat Boy", "Sometimes", "Ultralight Beams", "Erase Me", "Vice City", "Juke Jam", "Portuguese Knife Fight", "Thinkin Bout You", "Best Part", "Worth My While", "Blessed", "Fine Lines"];
 var actors = ["Brad Pitt","Chris Evans","Chris Pratt","Chris Pine","Matt Damon","Robert Downey jr","Kurt Russel","Zooey Deschanel","Brie Larson","Scarlett Johansson","Chris Hemsworth","Tom Holland","Karen Gillan","Paul Rudd","Bradley Cooper","Vin Diesel","Don Cheadle","Tessa Thompson","James Marsden"]
+
 function sp(){
     document.getElementById('introPage').style.display = "none";
     document.getElementById('multiPage').style.display = "none";
