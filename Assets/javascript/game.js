@@ -4,7 +4,7 @@ var numWrong = 0;
 var numRight = 0;
 var quotesLength = 0;
 var numChar = 0;
-var quotes = ["Chicken parmesean isn't vagan?", "Aw, man, I shot Marvin in the face", "See you later space cowboy", "You know, I do too. That's another thing we have in common. I hate it when you've got someone in your face, you try to give someone a hint and they won't leave, and then there's that big awkward silence, you know!", "Hey, I’m a street rat, remember? I’ll improvise.", "Who am I? Who am I? I am the guardian of lost souls, I am the powerful, the pleasurable, the indestructible Mushu.", " For a true hero isn't measured by the size of his strength, but by the strength of his heart.", " Why Michael, l thought you'd never ask! You see, these aliens from outer space want to make us slaves in their theme park. They're little. So we challenged them to a basketball game. Eh, what do we care? They're little, so we challenge them to a basketball game! But then they show up and they ain't so little, they're huge!", "We're all mad here", "You're embarrassing me in front of the wizards.", "Oh, we're using our made-up names. I'm Spider-Man then.", "Wakanda Forever", "I did you a big favor. I have successfully privatized world peace. What more do you want?", " I think we drink virgin blood because it sounds cool.", "I shall call him Squishy and he shall be mine and he shall be my Squishy.", "You played dodgeball? I loved dodgeball! Of course, I was the ball.",];     
+var quotes = ["Chicken parmesean isn't vegan?", "Aw, man, I shot Marvin in the face", "See you later space cowboy", "You know, I do too. That's another thing we have in common. I hate it when you've got someone in your face, you try to give someone a hint and they won't leave, and then there's that big awkward silence, you know!", "Hey, I’m a street rat, remember? I’ll improvise.", "Who am I? Who am I? I am the guardian of lost souls, I am the powerful, the pleasurable, the indestructible Mushu.", " For a true hero isn't measured by the size of his strength, but by the strength of his heart.", " Why Michael, l thought you'd never ask! You see, these aliens from outer space want to make us slaves in their theme park. They're little. So we challenged them to a basketball game. Eh, what do we care? They're little, so we challenge them to a basketball game! But then they show up and they ain't so little, they're huge!", "We're all mad here", "You're embarrassing me in front of the wizards.", "Oh, we're using our made-up names. I'm Spider-Man then.", "Wakanda Forever", "I did you a big favor. I have successfully privatized world peace. What more do you want?", " I think we drink virgin blood because it sounds cool.", "I shall call him Squishy and he shall be mine and he shall be my Squishy.", "You played dodgeball? I loved dodgeball! Of course, I was the ball.",];     
 var movies = ["Pulp Fiction", "Coco", "Titanic", "Avengers", "Resivour Dogs", "Inglorious Bastards", "Shrek", "Mulan", "Moana", "Split", "Scott Pilgrim vs The World", "The Room", "Deadpool", "Spiderman", "Batman: Dark Knight", "The Thing", "La La Land", "Spirited Away", "Logan", "Howels moving castle", "Spiderman: Into the Spiderverse", "Black Panther", "Aladdin", "Hercules"];
 var songs = ["I am", "Coming Down", "Forgot about Dre", "The Art of Peer Pressure", "Collard Greens", "Norf Norf", "Really Doe", "Bonfire", "Meditate", "Spice Girl", "Bounce", "Cash Machine", "Dead to Me", "Vile Mentality", "Who Dat Boy", "Sometimes", "Ultralight Beams", "Erase Me", "Vice City", "Juke Jam", "Portuguese Knife Fight", "Thinkin Bout You", "Best Part", "Worth My While", "Blessed", "Fine Lines"];
 var actors = ["Brad Pitt","Chris Evans","Chris Pratt","Chris Pine","Matt Damon","Robert Downey jr","Kurt Russel","Zooey Deschanel","Brie Larson","Scarlett Johansson","Chris Hemsworth","Tom Holland","Karen Gillan","Paul Rudd","Bradley Cooper","Vin Diesel","Don Cheadle","Tessa Thompson","James Marsden"]
@@ -54,10 +54,10 @@ function actors(){
         document.getElementById('letter1').style.visibility = "hidden";
         document.getElementById('underline1').style.display = "block";            
         document.getElementById('underline1').style.borderBottom = "3px solid black";
-    document.getElementById('singlePage').style.display = "none";    
-    document.getElementById('gamePage').style.display = "block";
-    document.getElementById('categoryName').innerHTML = "Guess every letter other than the correct one to win!";
-    document.getElementById('categoryName').style.width = "100%";
+        document.getElementById('singlePage').style.display = "none";    
+        document.getElementById('gamePage').style.display = "block";
+        document.getElementById('categoryName').innerHTML = "Guess every letter other than the correct one to win!";
+        document.getElementById('categoryName').style.width = "100%";
     if(document.getElementById('underline1').offsetWidth == 50){
         document.getElementById('categoryName').style.fontSize = "45px";
     }
@@ -67,11 +67,11 @@ function actors(){
     if(document.getElementById('underline1').offsetWidth == 18){
         document.getElementById('categoryName').style.fontSize = "20px";
     }
-    document.getElementById('letterBank').style.display = "none";
-    document.getElementById('challengeBank').style.display = "block";
+        document.getElementById('letterBank').style.display = "none";
+        document.getElementById('challengeBank').style.display = "block";
     quotesLength = 1;
     draw();
-    }
+}
 
 function challengeGuess(){
     var target = event.target || event.srcElement;
@@ -108,15 +108,15 @@ function challengeGuess(){
             results.style.height = "75px";
             results.style.lineHeight = "75px";
         }
-        document.getElementById('challengeBank').style.display = "none";
-        document.getElementById('vidSent').style.display = "block";
-        document.getElementById('again').style.display = "block";
-        document.getElementById('home').style.display = "block";
+            document.getElementById('challengeBank').style.display = "none";
+            document.getElementById('vidSent').style.display = "block";
+            document.getElementById('again').style.display = "block";
+            document.getElementById('home').style.display = "block";
         }
          if(numWrong==25){
-        results.style.visibility = "visible";
-        results.style.color = "#00b100";
-        results.innerHTML = "You win!";        
+            results.style.visibility = "visible";
+            results.style.color = "#00b100";
+            results.innerHTML = "You win!";        
         if(document.getElementById('underline1').offsetWidth == 50){
             results.style.fontSize = "200px";
             results.style.height = "200px";
@@ -134,12 +134,12 @@ function challengeGuess(){
             results.style.height = "75px";
             results.style.lineHeight = "75px";
         }
-        document.getElementById('challengeBank').style.display = "none";
-        document.getElementById('vidSent').style.display = "block";
-        document.getElementById('again').style.display = "block";
-        document.getElementById('home').style.display = "block";
-        document.getElementById('letter1').style.visibility = "visible";
-    }
+            document.getElementById('challengeBank').style.display = "none";
+            document.getElementById('vidSent').style.display = "block";
+            document.getElementById('again').style.display = "block";
+            document.getElementById('home').style.display = "block";
+            document.getElementById('letter1').style.visibility = "visible";
+        }
 }
 
 function countChars(countfrom,displayto) {
@@ -240,6 +240,7 @@ function guessLetter(){
     var upper = document.getElementById(lower).getAttribute('value');
     var results = document.getElementById('results');
     var ul1 = document.getElementById('underline1').offsetWidth;
+    
     for(a = 1; a < 101; a++){
         if(document.getElementById('letter'+a).innerHTML === upper || document.getElementById('letter'+a).innerHTML === lower){
             document.getElementById('letter'+a).style.visibility = "visible";
@@ -247,11 +248,11 @@ function guessLetter(){
             numRight++;
         }
     }
-    if(correct==0){
+         if(correct==0){
         numWrong++;
         hang();
     }
-    if(numWrong==6){
+         if(numWrong==6){
         results.style.visibility = "visible";
         results.style.color = "red";
         results.innerHTML = "Last Chance";
@@ -268,7 +269,7 @@ function guessLetter(){
             results.style.fontSize = "20px";
         }
     }
-    if(numWrong==7){
+        if(numWrong==7){
         results.innerHTML = "You lose!<br>But you can keep trying.";
         document.getElementById('again').style.display = "block";
         document.getElementById('home').style.display = "block";
@@ -282,10 +283,10 @@ function guessLetter(){
         if(ul1 == 18){
             results.style.lineHeight = "20px";
         }
-    }
-    if(numRight==quotesLength){
+        }
+         if(numRight==quotesLength){
         win();
-    }
+     }
 }
 
 function win(){
@@ -314,11 +315,11 @@ function win(){
         }
     }
     else{
-        results.innerHTML = "You win!";
-        document.getElementById('letterBank').style.display = "none";
-        again.style.display = "block";
-        document.getElementById('home').style.display = "block";
-        document.getElementById('vidSent').style.display = "block";
+            results.innerHTML = "You win!";
+            document.getElementById('letterBank').style.display = "none";
+            again.style.display = "block";
+            document.getElementById('home').style.display = "block";
+            document.getElementById('vidSent').style.display = "block";
         if(ul1 == 50){
             again.style.marginTop = "75px";
             results.style.marginTop = "75px";
@@ -339,8 +340,8 @@ function win(){
 
 function reset(){
     var ul1 = document.getElementById('underline1').offsetWidth;
-    var results = document.getElementById('results');
-    var again = document.getElementById('again');
+        var results = document.getElementById('results');
+        var again = document.getElementById('again');
     for(a = 1; a < 101; a++){
         document.getElementById('letter'+a).innerHTML = "&nbsp;";
         document.getElementById('underline'+a).style.width = ul1 + "px";
